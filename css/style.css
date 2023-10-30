@@ -1,0 +1,162 @@
+/* stili generali */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* mobile first */
+
+/* stili header */
+header{
+    width: 100%;
+    background-color: rgb(0, 174, 255);
+    /* debug rules */
+    border: 1px solid black;
+}
+
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 30px auto ;
+    padding: 10px;
+    /* debug rules */
+    /* border: 1px solid black; */
+}
+
+.fa-solid.fa-bars{
+    font-size: 30px;
+    color: white;
+}
+
+/* stili main */
+
+.container{
+    width: 90%;
+    height: 90%;
+    margin: 30px auto;
+    /* debgug rules */
+    border: 2px solid black;
+}
+
+/* section-1 */
+
+.features{
+    width: 100%;
+    /* debug rules */
+    border: 1px solid rgb(255, 0, 0);
+    height: 1000px;
+}
+
+.col{
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(145, 215, 255);
+}
+
+.button{
+   background-color: blue;
+   padding: 8px;
+   color: white; 
+   border-radius: 20px;
+   margin: 20px auto;
+}
+
+span .col{
+    margin: 20px auto;
+}
+
+
+
+
+
+
+
+
+/* section-2 */
+.bg-lilac{
+    background-color: rgb(144, 65, 254);
+    color: white;
+    font-size: 18px;
+}
+
+.box-img{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    /* debgug rules */
+    /* border: 1px solid black; */
+}
+
+.planning{
+    display: flex;
+    max-width: 1200px;
+    background-color: rgb(144, 65, 254);
+    color: white;
+    font-size: 18px;
+    /* debgug rules */
+    /* border: 2px solid black; */
+    /* height: 1100px; */
+
+}
+
+.planning-img{
+    width: 100%;
+    height: 100%;
+}
+
+h2{
+    margin: 20px auto;
+}
+
+.card{
+    padding: 20px;
+    color: black;
+    background-color: white;
+    margin: 30px auto;
+    text-align: center;
+    border-radius:40px;
+}
+
+.fa-solid.fa-arrow-down{
+    margin: 20px auto;
+    background-color:  rgb(144, 65, 254)  ; ;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+
+
+
+
+
+/* stili footer */
+
+
+
+
+
+
+/* tablet version */
+
+
+
+
+
+/* dekstop version */
+@media all and (min-width: 768px){
+    .topbar{
+        width: 65%;
+    }
+
+    .container{
+        width: 65%;
+    }
+
+    
+
+}
+
+
