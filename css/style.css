@@ -13,6 +13,7 @@ h1{
     font-size: 30px;
 }
 /* stili attributi */
+
 .center{
     text-align: center;
 }
@@ -38,6 +39,10 @@ h1{
 
 .grey{
     color: rgb(180, 177, 177);
+}
+
+.smaller-font{
+    font-size: 14px;
 }
 
 /* mobile first */
@@ -240,6 +245,27 @@ h2{
     border-radius: 100%;
 }
 
+/* section6 */
+
+.get-started{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+}
+
+.yellow{
+    color:#fdc15f;
+    font-size: 50px;
+}
+
+.fa-solid.fa-circle{
+    font-size: 8px;
+}
+
+.privacy-policy{
+    color: white;
+}
 
 
 
