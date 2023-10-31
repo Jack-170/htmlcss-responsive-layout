@@ -5,6 +5,40 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: "PT Sans";
+}
+
+h1{
+    font-size: 30px;
+}
+/* stili attributi */
+.center{
+    text-align: center;
+}
+
+.bg-blue{
+    background-color: rgb(16, 132, 255);
+}
+
+.purple{
+    color: #9792e4;
+}
+
+.bg-lilac{
+    background-color: #9792e4;
+    color: white;
+    font-size: 16px;
+}
+
+.bg-white{
+    background-color: white;
+    color: black;
+}
+
+.grey{
+    color: rgb(180, 177, 177);
+}
 
 /* mobile first */
 
@@ -19,7 +53,7 @@ header{
 .topbar{
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 85%;
     margin: 30px auto ;
     padding: 10px;
     /* debug rules */
@@ -34,11 +68,15 @@ header{
 /* stili main */
 
 .container{
-    width: 90%;
-    height: 90%;
+    width: 85%;
+    height: 85%;
     margin: 30px auto;
     /* debgug rules */
-    border: 2px solid black;
+    /* border: 2px solid black; */
+}
+
+p{
+    margin: 20px auto;
 }
 
 /* section-1 */
@@ -47,26 +85,54 @@ header{
     width: 100%;
     /* debug rules */
     border: 1px solid rgb(255, 0, 0);
-    height: 1000px;
+    /* height: 1000px; */
 }
 
 .col{
     padding: 10px;
     text-align: center;
     background-color: rgb(145, 215, 255);
+    margin-bottom: 25px;
+    font-size: 16px;
+    color:rgb(16, 132, 255) ;
+    border-radius: 25px;
+}
+
+ul{
+    list-style-type: none;
 }
 
 .button{
-   background-color: blue;
    padding: 8px;
    color: white; 
    border-radius: 20px;
    margin: 20px auto;
+   max-width: 190px;
+}
+.col-title{
+    color: rgb(16, 132, 255);
 }
 
-span .col{
-    margin: 20px auto;
+.col-icon{
+    color: rgb(16, 132, 255);
+    font-size: 70px;
 }
+
+.box-img-features{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+    /* debgug rules */
+    border: 1px solid black;
+}
+
+.features-img{
+    width: 100%;
+    height: 100%;
+}
+
+
 
 
 
@@ -76,26 +142,23 @@ span .col{
 
 
 /* section-2 */
-.bg-lilac{
-    background-color: rgb(144, 65, 254);
-    color: white;
-    font-size: 18px;
-}
+
 
 .box-img{
     display: flex;
+    justify-content: center;
     width: 100%;
-    height: 30%;
+    height: 40%;
     /* debgug rules */
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
+
+
+
 
 .planning{
     display: flex;
-    max-width: 1200px;
-    background-color: rgb(144, 65, 254);
-    color: white;
-    font-size: 18px;
+    width: 100%;
     /* debgug rules */
     /* border: 2px solid black; */
     /* height: 1100px; */
@@ -108,25 +171,74 @@ span .col{
 }
 
 h2{
-    margin: 20px auto;
+    margin: 15px auto;
 }
 
 .card{
     padding: 20px;
-    color: black;
-    background-color: white;
     margin: 30px auto;
     text-align: center;
     border-radius:40px;
+    border: 2px solid black;
 }
+
+
 
 .fa-solid.fa-arrow-down{
     margin: 20px auto;
-    background-color:  rgb(144, 65, 254)  ; ;
+    background-color:#9792e4;
     padding: 10px;
     border-radius: 100%;
 }
 
+
+/* section-3 */
+
+.testimonials{
+    display: flex;
+    width: 100%;
+    /* debug rules */
+}
+
+
+
+
+
+.img-testimonials{
+    width: 70%;
+    border-radius: 100%;
+}
+
+/* section4 */
+
+.benefits-container{
+    width: 100%;
+    display: flex;
+    /* debug rules */
+    text-align: center;
+}
+
+.benefits{
+    text-align: start;
+    background-color: white;
+}
+.numbers{
+    font-size: 40px;
+}
+
+/* section5 */
+
+.about-us{
+    width: 100%;
+    display: flex;
+    /* debug rules */
+    text-align: start;
+    font-size: 20px;
+}
+.img-about-us{
+    width: 70%;
+    border-radius: 100%;
+}
 
 
 
@@ -140,11 +252,86 @@ h2{
 
 
 /* tablet version */
+@media all and (min-width: 481px){
+    /* section1 */
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .col{
+        width: calc(100% * 1 / 3 - 20px);
+        margin: 10px;
+    }
+    #demo{
+        width: calc((100% / 3) *2 - 20px)  ;
+        height: fit-content;
+    }
+
+    
 
 
 
+   
 
 
+    /* section2 */
+
+
+    
+
+
+    /* section3 */
+
+    .bg-lilac.card{
+        display: flex;
+    }
+
+    .card-text{
+        width: 70%;
+        
+    }
+
+    .box-img-testimonials{
+        width: 30%;
+        height:250px;
+    }
+
+    .img-testimonials{
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-text h2{
+        text-align: start;
+    }
+
+    /* section4 */
+
+    .benefits-container .container{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .benefits.card{
+        width: calc(100% * 1 / 2 - 20px);
+        margin: 10px;
+    }
+
+    .benefits-title{
+        flex-basis: 100%;
+    }
+    /* section5 */
+    .about-us .container{
+        display: flex;
+    }
+
+    .about-us-box{
+        width: 50%;
+    }
+    
+}
+
+    
 /* dekstop version */
 @media all and (min-width: 768px){
     .topbar{
@@ -154,6 +341,44 @@ h2{
     .container{
         width: 65%;
     }
+
+    /* section1 */
+    .row{
+       
+    }
+    .col{
+       
+       
+       
+        
+    }
+    #demo{
+        display: flex;
+    }
+    .widht-fifty{
+        width: 50%;
+    }
+
+
+    
+    /* section4 */
+
+    .benefits-container .container{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .benefits.card{
+        width: calc(100% * 1 / 3 - 20px);
+        margin: 10px;
+    }
+
+    .benefits-title{
+        flex-basis: 100%;
+    }
+
+    
+    
 
     
 
