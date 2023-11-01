@@ -13,6 +13,9 @@ h1{
     font-size: 30px;
 }
 /* stili attributi */
+.more-margin{
+    margin-bottom: 60px;
+}
 
 .center{
     text-align: center;
@@ -89,7 +92,7 @@ p{
 .features{
     width: 100%;
     /* debug rules */
-    border: 1px solid rgb(255, 0, 0);
+    /* border: 1px solid rgb(255, 0, 0); */
     /* height: 1000px; */
 }
 
@@ -129,7 +132,7 @@ ul{
     width: 100%;
     height: 40%;
     /* debgug rules */
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .features-img{
@@ -155,7 +158,7 @@ ul{
     width: 100%;
     height: 40%;
     /* debgug rules */
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 
@@ -184,7 +187,7 @@ h2{
     margin: 30px auto;
     text-align: center;
     border-radius:40px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 
@@ -272,6 +275,18 @@ h2{
 
 /* stili footer */
 
+footer{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    /* debug rules */
+}
+
+
+
 
 
 
@@ -292,18 +307,6 @@ h2{
         width: calc((100% / 3) *2 - 20px)  ;
         height: fit-content;
     }
-
-    
-
-
-
-   
-
-
-    /* section2 */
-
-
-    
 
 
     /* section3 */
@@ -368,23 +371,21 @@ h2{
         width: 65%;
     }
 
-    /* section1 */
-    .row{
-       
-    }
-    .col{
-       
-       
-       
-        
-    }
+    /* section1 */    
+
     #demo{
         display: flex;
     }
     .widht-fifty{
         width: 50%;
+        margin: auto;
     }
 
+    /* section2 */
+    .planning-box{
+        display: flex;
+        width: 50%;
+    }
 
     
     /* section4 */
@@ -403,11 +404,5 @@ h2{
         flex-basis: 100%;
     }
 
-    
-    
-
-    
-
 }
-
 
