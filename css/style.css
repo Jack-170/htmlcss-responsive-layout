@@ -382,10 +382,12 @@ footer{
     }
 
     /* section2 */
-    .planning-box{
-        display: flex;
+     .planning-box{
         width: 50%;
+        margin: auto;
     }
+
+    
 
     
     /* section4 */
